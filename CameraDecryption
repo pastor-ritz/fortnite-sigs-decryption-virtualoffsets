@@ -1,0 +1,191 @@
+_BYTE *__fastcall sub_7FF6BDEA3974(__int64 a1, _BYTE *a2)
+{
+  __int64 v2; // rbx
+  _BYTE *v3; // rsi
+  int v4; // edi
+  __int64 v5; // rdx
+  char v6; // al
+  __int64 v7; // rdx
+  __int64 v8; // rcx
+  int v9; // er9
+  _BYTE *v10; // r10
+  int v11; // eax
+  _BYTE *v12; // rcx
+  __int64 v13; // r8
+  __int64 v14; // rdx
+  char v15; // al
+  __int64 v16; // r9
+  __int64 v17; // rcx
+  char v18; // r10
+  _BYTE *v19; // r11
+  int v20; // eax
+  char v21; // cl
+  int v22; // eax
+  _BYTE *v23; // rcx
+  __int64 v24; // r8
+  __int64 v25; // rdx
+  char v26; // al
+  int v27; // edx
+  __int64 v28; // rcx
+  _BYTE *v29; // r9
+  char v30; // al
+  char v31; // al
+  char v32; // al
+  __int64 v33; // r8
+  int v34; // er9
+  __int64 v35; // rdx
+  _BYTE *v36; // rcx
+  char v37; // al
+
+  v2 = a1 + 12905;
+  v3 = a2;
+  v4 = 0;
+  v5 = a1;
+  *(float *)&dword_7FF6C429CD88 = *(float *)&dword_7FF6C429CD88
+                                + (float)((float)((float)*(double *)(a1 + 752) - *(double *)(a1 + 744))
+                                        * ymmword_7FF6C2440E44);
+  if ( byte_7FF6C3E7A498 )
+  {
+    switch ( byte_7FF6C3E7A498 )
+    {
+      case 1:
+        v26 = *(_BYTE *)v2;
+        if ( *(_BYTE *)v2 >= 0 || *(_BYTE *)(a1 + 12906) >= 0 )
+        {
+          *(_BYTE *)(a1 + 12906) |= 0x80u;
+          *(_BYTE *)v2 = v26 | 0x80;
+          *(_QWORD *)(a1 + 12913) = sub_7FF6B89829B4(72i64, 0i64);
+        }
+        v27 = 2493835;
+        v28 = *(_QWORD *)(v2 + 8) + 24i64 - (_QWORD)v3;
+        v29 = v3;
+        do
+        {
+          v30 = v27;
+          v27 ^= v4 ^ 0xFEDCBA98;
+          v31 = (v29[v28] ^ v30) - v4++;
+          *v29++ = v31;
+        }
+        while ( v4 < 24 );
+        break;
+      case 2:
+        v23 = (_BYTE *)(a1 + 12908);
+        v24 = 24i64;
+        v25 = (__int64)&v3[-v5 - 12908];
+        do
+        {
+          v23[v25] = *v23 + ~v23[9];
+          ++v23;
+          --v24;
+        }
+        while ( v24 );
+        break;
+      case 3:
+        v15 = *(_BYTE *)v2;
+        if ( *(_BYTE *)v2 >= 0 || *(_BYTE *)(a1 + 12906) >= 0 )
+        {
+          *(_BYTE *)(a1 + 12906) |= 0x80u;
+          *(_BYTE *)v2 = v15 | 0x80;
+          v17 = qword_7FF6C3EDEC20;
+          if ( !qword_7FF6C3EDEC20 )
+          {
+            sub_7FF6B996C6D4(qword_7FF6C3EDEC20, v5);
+            v17 = qword_7FF6C3EDEC20;
+          }
+          v16 = (*(__int64 (__fastcall **)(__int64, __int64))(*(_QWORD *)v17 + 16i64))(v17, 72i64);
+          *(_QWORD *)(v2 + 8) = v16;
+        }
+        else
+        {
+          v16 = *(_QWORD *)(a1 + 12913);
+        }
+        v18 = -30;
+        v19 = v3;
+        do
+        {
+          v20 = 24;
+          v21 = v18;
+          if ( v4 % 3u != 1 )
+            v20 = 48;
+          v18 += 17;
+          v22 = v4++ + v20;
+          *v19++ = *(_BYTE *)(v22 + v16) ^ v21;
+        }
+        while ( v4 < 24 );
+        break;
+      case 4:
+        v12 = (_BYTE *)(a1 + 12917);
+        v13 = 24i64;
+        v14 = (__int64)&v3[-v5 - 12917];
+        do
+        {
+          v12[v14] = *v12 ^ *(v12 - 9);
+          ++v12;
+          --v13;
+        }
+        while ( v13 );
+        break;
+      case 5:
+        v6 = *(_BYTE *)v2;
+        if ( *(_BYTE *)v2 >= 0 || *(_BYTE *)(a1 + 12906) >= 0 )
+        {
+          *(_BYTE *)(a1 + 12906) |= 0x80u;
+          *(_BYTE *)v2 = v6 | 0x80;
+          v8 = qword_7FF6C3EDEC20;
+          if ( !qword_7FF6C3EDEC20 )
+          {
+            sub_7FF6B996C6D4(qword_7FF6C3EDEC20, v5);
+            v8 = qword_7FF6C3EDEC20;
+          }
+          v7 = (*(__int64 (__fastcall **)(__int64, __int64))(*(_QWORD *)v8 + 16i64))(v8, 72i64);
+          *(_QWORD *)(v2 + 8) = v7;
+        }
+        else
+        {
+          v7 = *(_QWORD *)(a1 + 12913);
+        }
+        v9 = 161968123;
+        v10 = v3;
+        do
+        {
+          *v10 = *(_BYTE *)(12 * ((v4 & 1u) + 1) - (unsigned __int64)(unsigned int)v4 + v7 + 24) - v9;
+          v11 = 16 * v4++;
+          ++v10;
+          v9 ^= ~v11;
+        }
+        while ( v4 < 24 );
+        break;
+      default:
+        sub_7FF6BDE99F94(v2, v3);
+        break;
+    }
+  }
+  else
+  {
+    v32 = *(_BYTE *)v2;
+    if ( *(_BYTE *)v2 >= 0 || *(_BYTE *)(a1 + 12906) >= 0 )
+    {
+      *(_BYTE *)(a1 + 12906) |= 0x80u;
+      *(_BYTE *)v2 = v32 | 0x80;
+      *(_QWORD *)(a1 + 12913) = sub_7FF6B89829B4(72i64, 0i64);
+    }
+    v33 = 24i64;
+    v34 = 427127919;
+    v35 = *(_QWORD *)(v2 + 8) + 24i64 - (_QWORD)v3;
+    v36 = v3;
+    do
+    {
+      v37 = v34;
+      v34 += v4;
+      v4 += 16;
+      *v36 = v36[v35] ^ v37;
+      ++v36;
+      --v33;
+    }
+    while ( v33 );
+  }
+  return v3;
+}
+
+If you want to tell me how to use it plz do lol
+credits to Zetolac for teaching me how to find it (:
